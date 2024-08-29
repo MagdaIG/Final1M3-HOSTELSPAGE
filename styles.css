@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Color de fondo claro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Expande el contenido principal para ocupar el espacio disponible */
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-color: #b0e0e6; /* Color celeste claro */
+    padding: 10px 20px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu-link {
+    color: #000000; /* Texto negro para los enlaces del menú */
+    text-decoration: none;
+    padding: 0 15px;
+}
+.header__menu-link--bold {
+    font-weight: bold;
+}
+
+/* Estilos para el menú */
+.header__menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinea los elementos del menú horizontalmente */
+}
+
+.header__menu-item {
+    margin-right: 20px; /* Espaciado entre los elementos del menú */
+}
+
+/* Fondo de la sección principal */
+
+.main-content {
+    background-image: url('/images/beach.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 0;
+    color: #ffffff; /* Texto blanco */
+}
+.main-content__hero {
+    background-color: rgba(46, 122, 105, 0.92); /* Fondo oscuro con transparencia */
+    display: inline-block;
+    padding: 20px;
+}
+.main-content__title--light {
+    font-weight: normal; /* Define que el título no esté en negrita */
+}
+
+/* Estilos para el formulario de búsqueda */
+.search-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaciado entre los campos */
+    color: black;
+    font-weight: bold;
+}
+
+/* Estilos para el botón de búsqueda */
+.search-form__button {
+    padding: 10px 30px;
+    background-color: #5470a3; /* Fondo azul */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.search-form__button:hover {
+    background-color: rgb(132, 156, 200);
+}
+
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #b0e0e6; /* Fondo celeste claro */
+    color: #000000;
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text {
+    flex: 1;
+    text-align: left;
+}
+
+.footer__social {
+    flex: 1;
+    text-align: right;
+}
+
+.footer__social-link {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer__social-link:hover {
+    text-decoration: underline;
+}
+.footer__text--bold {
+    font-weight: bold;
+}
